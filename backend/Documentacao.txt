@@ -1,0 +1,62 @@
+Cadastro de Aunos -- Campos esperados e os tipos de dados
+	Campos : 
+	{
+	"nome":"Bernardo Jaime",
+	"sexo":"Masculino",
+	"data_nascimento":"10/10/2002",
+	"contacto":"943222322",
+	"email":"bernardojaime@gmail.com",
+	"encarregado":"Filipe Manuel Jaime",
+	"contacto_encarregado":"954834422",
+	"email_encarregado":"filipejaime@gmail.com",
+	"parentesco":"Pai",
+	"turma_id":5,
+	"classe_id":2,
+	"ano_lectivo":"2026",
+	"estado":"Ativo",
+	"data_matricula":"03/09/2026"	
+	}
+
+
+Cadastro de Professores -- Campos esperados e os tipos de dados
+	Campos : 
+	{
+	"nome":"Filipe Jaime",
+	"sexo":"Masculino",
+	"data_nascimento":"10/08/2004",
+	"contacto":"943542322",
+	"email":"filipe@gmail.com",
+	"endereco":"Avenida Brasil - Morro Bento",
+	"especialidade":"Formado em Computação Quantica",
+	"data_contratacao":"03/06/2026",
+	"formacao":"Mestrado", 
+	"experiencia":"bb", 
+	"observacoes":"bb" ,
+	"estado":"Ativo",
+	"data_matricula":"00/09/2026"	
+	}
+
+
+Cadastro de matriculas -- Campos esperados e os tipos de dados
+	Campos
+	{
+	"alunoId":1, 
+	"anoLectivo":"2026", 
+	"classeId":2, 
+	"turmaId":5, 
+	"turno":"Manhã", 
+	"dataMatricula":"2026",
+	"taxaMatricula":5000,
+	"estadoPagamento":"Pago",
+	"estado":"Pendente",
+	"observacoes":"Matricula do aluno Andrade Jaime feita no dia de Hoje"
+	}
+
+Cadastro de Pagamento -- Campos esperados e tipos de dados
+	Campos
+	{
+	"alunoId":1,
+	"data":"",
+	"valor":15000,
+	"status":"Pago"
+	}

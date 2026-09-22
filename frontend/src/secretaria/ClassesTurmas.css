@@ -1,0 +1,298 @@
+/* ============================================================
+   CLASSES/TURMAS - ClassesTurmas.css
+   ============================================================ */
+
+.classes-container {
+  background: #1a1a1a;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #e8e8e8;
+}
+
+/* Header */
+.classes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.classes-header h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #f0f0f0;
+}
+
+.classes-header h2 .icon {
+  font-size: 2rem;
+}
+
+/* Classe Card */
+.classe-card {
+  background: #222;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #3b3b3b;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+.classe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #333;
+}
+
+.classe-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.classe-info h3 {
+  color: #f0f0f0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ano-badge {
+  background: #1a2a3a;
+  color: #80b0d0;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  border: 1px solid #2a4a5a;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.turmas-count {
+  background: #2a2a2a;
+  color: #b0b0b0;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  border: 1px solid #3b3b3b;
+}
+
+.status-badge {
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.status-badge.disponivel {
+  background: #1a3a1a;
+  color: #80c080;
+  border: 1px solid #2a5a2a;
+}
+
+.status-badge.lotada {
+  background: #3a2a2a;
+  color: #d08080;
+  border: 1px solid #5a3a3a;
+}
+
+.status-badge.ativo {
+  background: #1a3a1a;
+  color: #80c080;
+  border: 1px solid #2a5a2a;
+}
+
+.status-badge.encerrado {
+  background: #3a2a2a;
+  color: #d08080;
+  border: 1px solid #5a3a3a;
+}
+
+.classe-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.classe-actions .btn-edit {
+  background: #2a2a3a;
+  color: #b0b0d0;
+  border: 1px solid #3a3a5a;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.classe-actions .btn-edit:hover {
+  background: #3a3a5a;
+  color: #f0f0f0;
+}
+
+/* Turmas Grid */
+.turmas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.empty-turmas {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+  color: #6a6a6a;
+  background: #1a1a1a;
+  border-radius: 0.5rem;
+}
+
+.turma-card {
+  background: #2a2a2a;
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+  border: 1px solid #3b3b3b;
+  transition: 0.3s;
+}
+
+.turma-card:hover {
+  border-color: #5a7a5a;
+  transform: translateY(-2px);
+}
+
+.turma-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.turma-header h4 {
+  color: #f0f0f0;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.turma-detalhes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.detalhe-item {
+  color: #b0b0b0;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0;
+}
+
+.detalhe-item svg {
+  color: #7a7a7a;
+  font-size: 0.8rem;
+}
+
+.turma-actions {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #333;
+}
+
+.turma-actions .btn-view,
+.turma-actions .btn-edit {
+  flex: 1;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.turma-actions .btn-view {
+  background: #1a2a3a;
+  color: #80b0d0;
+  border: 1px solid #2a4a5a;
+}
+
+.turma-actions .btn-view:hover {
+  background: #2a4a5a;
+  color: #f0f0f0;
+}
+
+.turma-actions .btn-edit {
+  background: #2a2a3a;
+  color: #b0b0d0;
+  border: 1px solid #3a3a5a;
+}
+
+.turma-actions .btn-edit:hover {
+  background: #3a3a5a;
+  color: #f0f0f0;
+}
+
+/* Turma Info Cards */
+.turma-info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-card {
+  background: #2a2a2a;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #3b3b3b;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #d0d0d0;
+  font-size: 0.85rem;
+}
+
+.info-card svg {
+  color: #7a7a7a;
+}
+
+/* Botões */
+.btn-transfer {
+  background: transparent;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 0.85rem;
+  color: #d0b080;
+}
+
+.btn-transfer:hover {
+  background: #3a2a1a;
+  color: #f0d0a0;
+}

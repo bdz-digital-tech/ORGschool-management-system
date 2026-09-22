@@ -1,0 +1,177 @@
+
+/* Botão Exportar */
+.btn-export {
+  background: #2a2a2a;
+  color: #b0b0b0;
+  border: 1px solid #3b3b3b;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.btn-export:hover {
+  background: #3a3a3a;
+  color: #f0f0f0;
+  border-color: #5a7a5a;
+}
+
+/* Relatório Container */
+.relatorio-container {
+  background: #222;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid #3b3b3b;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+.relatorio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Filtros */
+.relatorio-filtros {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.filter-group label {
+  color: #b0b0b0;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.filter-group input {
+  background: #2a2a2a;
+  border: 1px solid #3b3b3b;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  color: #e8e8e8;
+  font-size: 0.9rem;
+  outline: none;
+  transition: 0.3s;
+  min-width: 150px;
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+  border-color: #5a5a5a;
+  box-shadow: 0 0 0 3px rgba(90, 122, 90, 0.15);
+}
+
+.filter-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+  align-self: center;
+}
+
+.filter-actions .btn-export {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+/* Relatório Resumo */
+.relatorio-resumo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+/* Tabela */
+.tabela-container {
+  background: #1a1a1a;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #2a2a2a;
+  overflow-x: auto;
+}
+
+.tabela-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.tabela-container thead {
+  background: #1a1a1a;
+}
+
+.tabela-container th {
+  text-align: left;
+  padding: 0.6rem 0.5rem;
+  color: #9a9a9a;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid #2a2a2a;
+  white-space: nowrap;
+}
+
+.tabela-container td {
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid #2a2a2a;
+  color: #d4d4d4;
+  vertical-align: middle;
+}
+
+.tabela-container tr:hover td {
+  background: #2a2a2a;
+}
+
+/* Badges específicos */
+.estado-badge.ativa {
+  background: #1a3a1a;
+  color: #80c080;
+  border: 1px solid #2a5a2a;
+}
+
+/* Disciplinas Resumo */
+.disciplinas-resumo {
+  background: #2a2a2a;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #3b3b3b;
+}
+
+.disciplinas-resumo h4 {
+  color: #d0d0d0;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.disciplinas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.disciplina-item {
+  display: flex;
+  justify-content: space-between;
+  background: #1a1a1a;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #3b3b3b;
+}
+
+.disciplina-nome {
+  color: #d0d0d0;
+  font-size: 0.85rem;
+}
+
+.disciplina-count {
+  color: #9a9a9a;
+  font-size: 0.8rem;
+}
