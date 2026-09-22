@@ -1,4 +1,4 @@
-const { Pool } = require('pg');
+/* const { Pool } = require('pg');
 
 const pool = new Pool({
   host: process.env.PGHOST || 'localhost',
@@ -6,6 +6,19 @@ const pool = new Pool({
   database: process.env.PGDATABASE || 'colegio_julia',
   user: process.env.PGUSER || 'postgres',
   password: process.env.PGPASSWORD || '8101',
+});
+
+pool.on('error', (err) => {
+  console.error('Erro inesperado no pool de conexões PostgreSQL:', err);
+});
+
+module.exports = pool;
+ */
+const { Pool } = require('pg');
+
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: process.env.DATABASE_URL ? { rejectUnauthorized: false } : false,
 });
 
 pool.on('error', (err) => {
