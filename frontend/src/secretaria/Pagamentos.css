@@ -1,0 +1,564 @@
+.pagamentos-container {
+  background: #0a0a0a;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #e8e8e8;
+}
+
+/* Header */
+.pagamentos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pagamentos-header h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #f0f0f0;
+}
+
+.pagamentos-header h2 .icon {
+  font-size: 2rem;
+}
+
+/* Filtros */
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  background: #222;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #3b3b3b;
+  align-items: center;
+}
+
+.filter-group label {
+  color: #b0b0b0;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.filter-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.btn-recibos,
+.btn-pendentes {
+  background: #2a2a2a;
+  color: #b0b0b0;
+  border: 1px solid #3b3b3b;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.btn-recibos:hover,
+.btn-pendentes:hover {
+  background: #333;
+  color: #f0f0f0;
+  border-color: #5a7a5a;
+}
+
+/* Ações */
+.btn-propina {
+  background: transparent;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 0.85rem;
+  color: #80c080;
+}
+
+.btn-propina:hover {
+  background: #1a3a1a;
+  color: #a0f0a0;
+}
+
+.btn-receipt {
+  background: transparent;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 0.85rem;
+  color: #d0a080;
+}
+
+.btn-receipt:hover {
+  background: #3a2a1a;
+  color: #f0d0a0;
+}
+
+/* Propinas */
+.propinas-container {
+  background: #222;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid #3b3b3b;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+.resumo-card {
+  background: #2a2a2a;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #3b3b3b;
+  text-align: center;
+}
+
+.resumo-card h4 {
+  color: #b0b0b0;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.resumo-card .valor {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f0f0f0;
+}
+
+.resumo-card .valor.positive {
+  color: #80c080;
+}
+
+.resumo-card .valor.negative {
+  color: #d08080;
+}
+
+.propinas-table h3 {
+  color: #d0d0d0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+/* Recibos */
+.recibos-container {
+  background: #222;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid #3b3b3b;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+.recibos-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Pendentes */
+.pendentes-container {
+  background: #222;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid #3b3b3b;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Busca de Aluno */
+.search-aluno-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-aluno-input {
+  width: 100%;
+  background: #2a2a2a;
+  border: 1px solid #3b3b3b;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  color: #e8e8e8;
+  font-size: 0.95rem;
+  transition: 0.3s;
+  outline: none;
+}
+
+.search-aluno-input:focus {
+  border-color: #5a5a5a;
+  box-shadow: 0 0 0 3px rgba(90, 122, 90, 0.15);
+}
+
+.resultados-alunos {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #2a2a2a;
+  border: 1px solid #3b3b3b;
+  border-radius: 0.5rem;
+  margin-top: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 100;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+.resultado-aluno-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border-bottom: 1px solid #333;
+}
+
+.resultado-aluno-item:hover {
+  background: #333;
+}
+
+.resultado-aluno-item .codigo {
+  color: #9a9a9a;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.resultado-aluno-item .nome {
+  color: #f0f0f0;
+  flex: 1;
+}
+
+.resultado-aluno-item .meses-pagos-info {
+  color: #80c080;
+  font-size: 0.75rem;
+  background: #1a2a1a;
+  padding: 0.15rem 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid #2a5a2a;
+  white-space: nowrap;
+}
+
+.aluno-selecionado {
+  background: #1a2a1a !important;
+  border-color: #2a5a2a !important;
+  color: #80c080 !important;
+}
+
+/* Meses Checkbox */
+.meses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.5rem;
+  background: #2a2a2a;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #3b3b3b;
+}
+
+.mes-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #d0d0d0;
+  font-size: 0.9rem;
+}
+
+.mes-checkbox:hover:not(.pago) {
+  background: #333;
+}
+
+.mes-checkbox.pago {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #1a1a1a;
+}
+
+.mes-checkbox.pago .pago-badge {
+  color: #80c080;
+  font-size: 0.7rem;
+  margin-left: auto;
+}
+
+.mes-checkbox.selecionado {
+  background: #1a3a1a;
+  border: 1px solid #2a5a2a;
+}
+
+.mes-checkbox input[type="checkbox"] {
+  accent-color: #5a7a5a;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.mes-checkbox.pago input[type="checkbox"] {
+  cursor: not-allowed;
+}
+
+.mes-checkbox input[type="checkbox"]:checked + span {
+  color: #80c080;
+}
+
+.meses-pagos-info {
+  color: #80b0d0;
+}
+
+.meses-pagos-info strong {
+  color: #80d0f0;
+}
+
+.btn-download-pdf {
+  background: #2a3a5a !important;
+  border-color: #3a5a7a !important;
+}
+
+.btn-download-pdf:hover {
+  background: #3a5a7a !important;
+}
+
+/* ==================== SECÇÃO DE MULTA ==================== */
+.multa-section {
+  background: linear-gradient(
+    135deg,
+    rgba(243, 156, 18, 0.06),
+    rgba(231, 76, 60, 0.04)
+  );
+  border: 1px solid rgba(243, 156, 18, 0.3);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.multa-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.multa-toggle {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e0e0e0 !important;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.multa-toggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #f39c12;
+}
+
+.multa-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.multa-info svg {
+  color: #3498db;
+}
+
+.multa-fields {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(243, 156, 18, 0.3);
+}
+
+.multa-fields .form-group {
+  margin: 0;
+}
+
+/* ==================== RESUMO DO VALOR ==================== */
+
+.resumo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.resumo-row:last-child {
+  border-bottom: none;
+}
+
+.resumo-row strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.resumo-row.multa-row {
+  color: #f39c12;
+}
+
+.resumo-row.multa-row strong {
+  color: #f39c12;
+}
+
+.resumo-row.multa-row svg {
+  margin-right: 0.3rem;
+}
+
+.resumo-row.total-row {
+  padding-top: 0.75rem;
+  margin-top: 0.5rem;
+  border-top: 2px solid #2ecc71;
+  border-bottom: none;
+  font-size: 1rem;
+  color: #2ecc71;
+}
+
+.resumo-row.total-row strong {
+  color: #2ecc71;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+/* ==================== BADGES DE TIPO ==================== */
+.tipo-badge {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border-radius: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.tipo-propina {
+  background: rgba(46, 204, 113, 0.15);
+  color: #2ecc71;
+}
+.tipo-matrícula,
+.tipo-matricula {
+  background: rgba(52, 152, 219, 0.15);
+  color: #3498db;
+}
+.tipo-confirmação,
+.tipo-confirmacao {
+  background: rgba(155, 89, 182, 0.15);
+  color: #9b59b6;
+}
+.tipo-declaração,
+.tipo-declaracao {
+  background: rgba(241, 196, 15, 0.15);
+  color: #f1c40f;
+}
+.tipo-certificado {
+  background: rgba(230, 126, 34, 0.15);
+  color: #e67e22;
+}
+.tipo-emissão-de-documento,
+.tipo-emissao-de-documento {
+  background: rgba(26, 188, 156, 0.15);
+  color: #1abc9c;
+}
+.tipo-outros {
+  background: rgba(149, 165, 166, 0.15);
+  color: #95a5a6;
+}
+
+/* ==================== BADGE DE MULTA ==================== */
+.multa-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: rgba(243, 156, 18, 0.15);
+  border: 1px solid rgba(243, 156, 18, 0.4);
+  border-radius: 0.5rem;
+  color: #f39c12;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ==================== RESUMO POR TIPO ==================== */
+.resumo-por-tipo {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.resumo-por-tipo h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 1rem 0;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.resumo-tipo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.resumo-tipo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem 1rem;
+  background: #0f0f0f;
+  border: 1px solid #2a2a2a;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.resumo-tipo-card:hover {
+  border-color: #2c5a2c;
+  transform: translateY(-2px);
+}
+
+.tipo-nome {
+  font-size: 0.75rem;
+  color: #b0b0b0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.tipo-valor {
+  font-size: 0.95rem;
+  color: #2ecc71;
+  font-weight: 700;
+}
+
+.tipo-count {
+  font-size: 0.7rem;
+  color: #7f8c8d;
+}
+
+.resumo-pagamentos .value.warning {
+  color: #f39c12;
+}

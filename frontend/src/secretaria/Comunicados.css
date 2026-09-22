@@ -1,0 +1,252 @@
+/* ============================================================
+   COMUNICADOS - Comunicados.css
+   ============================================================ */
+
+.comunicados-container {
+  background: #1a1a1a;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #e8e8e8;
+}
+
+/* Header */
+.comunicados-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.comunicados-header h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #f0f0f0;
+}
+
+.comunicados-header h2 .icon {
+  font-size: 2rem;
+}
+
+/* Formulário */
+.destinatarios-section {
+  background: #1a1a1a;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #2a2a2a;
+}
+
+.destinatarios-info .info-text {
+  color: #b0b0b0;
+  margin-bottom: 0.8rem;
+}
+
+.destinatarios-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.destinatarios-select .info-text {
+  color: #b0b0b0;
+  margin-bottom: 0.8rem;
+}
+
+.destinatarios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.destinatarios-selecionados {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #2a2a2a;
+}
+
+.destinatarios-selecionados p {
+  color: #b0b0b0;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Botões Publicar */
+.btn-publish {
+  background: #2a3a5a;
+  color: #80b0d0;
+  border: 1px solid #3a5a7a;
+  padding: 0.7rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.3s;
+}
+
+.btn-publish:hover {
+  background: #3a5a7a;
+  color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* Lista de Comunicados */
+.comunicados-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.comunicado-card {
+  background: #222;
+  border-radius: 0.5rem;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #3b3b3b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.comunicado-card:hover {
+  border-color: #5a5a5a;
+  transform: translateX(4px);
+}
+
+.comunicado-card.rascunho {
+  border-left: 4px solid #c0c080;
+}
+
+.comunicado-card.publicado {
+  border-left: 4px solid #80c080;
+}
+
+.comunicado-card.arquivado {
+  border-left: 4px solid #6a6a6a;
+  opacity: 0.7;
+}
+
+.comunicado-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.comunicado-titulo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.comunicado-titulo h3 {
+  color: #f0f0f0;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.comunicado-badges {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.tipo-badge {
+  padding: 0.15rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  background: #1a2a3a;
+  color: #80b0d0;
+  border: 1px solid #2a4a5a;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.comunicado-meta {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  color: #8a8a8a;
+  font-size: 0.8rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.comunicado-card-body {
+  padding: 0.5rem 0;
+}
+
+.comunicado-mensagem {
+  color: #c0c0c0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.3rem;
+}
+
+.comunicado-autor {
+  color: #8a8a8a;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.comunicado-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #2a2a2a;
+}
+
+.comunicado-destinatarios {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #8a8a8a;
+  font-size: 0.8rem;
+}
+
+.comunicado-actions {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.comunicado-actions button {
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.btn-archive {
+  background: #2a2a2a;
+  color: #8a8a8a;
+  border: 1px solid #4a4a4a;
+}
+
+.btn-archive:hover {
+  background: #3a3a3a;
+  color: #f0f0f0;
+}

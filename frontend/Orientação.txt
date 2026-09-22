@@ -1,0 +1,84 @@
+--------------------------------------------
+Utilizadores simulados:
+
+painel Admin
+admin@luki.ao 
+senha :admin123
+
+
+primeiro cliente do sistema simulado
+secretaria@luki.ao
+senha: 000000
+
+segundo cliente do sistema simulado
+juliomartinsjulio67@gmail.com
+senha: 11111
+-------------------------------------------
+
+
+
+
+. Criar Utilizador com Escola (já tem criados a cima)
+Painel Admin → "Utilizadores" → "Novo Utilizador"
+Preenche: Nome, Email, Senha
+
+Perfil: Administrador de Escola
+        Seleciona a escola no dropdown
+        Clica "Criar"
+
+        Utilizador criado com escolaId correto
+
+
+2. Login com Isolamento Logout
+Login com o utilizador criado
+    Vê apenas os dados da sua escola (vazio se nova)
+    Cria alunos → Aparecem só na lista dele
+
+Logout → Login com outra escola
+    NÃO vê os alunos da primeira escola
+
+3. Configuração de Recibo por Escola
+Painel Admin → "Configuração de Recibo"
+    Seleciona "Escola A" → Altera nome → Guarda
+    Seleciona "Escola B" → Altera nome → Guarda
+    Cada escola tem o seu recibo personalizado
+
+
+
+
+Interface do Utilizador:
+1. Dashboard: mostra o resumo das operações
+2. Alunos: Mostra a lista de tomos os alunos inseridos. quando cricado em um aluno, mostra o perfil do aluno.
+3. Professores: Mostra a lista dos profesores.
+    acão: CRUD do professor.
+4. Matriculas: engloba a confirmação e a matricula de novos alunos, exibindo também a lista de alunos matriculasdos e confirmados.
+    ação: CRUD de alunos e reconfirmação de alunos.
+
+    OBS: todos os alunos entram por está pagina
+    
+5. Pagamentos, centro das complicações e deve ser bem testado, mostrar todos os pagamentos, e tem o botão pagamento onde são feita as operações de qualquer pagamento.
+    Mostra recibo de todo tipo de pagamentos.
+    Edita detalhes de pagamentos.
+6. ClassesTurmas: Carrega o CRUD de turmas e classes.
+    função: criar turmas com suas capacidades de sus detalhes.
+7. Ano Lectivo: Mostra card do ano em curso com o numero de turmas clases.
+
+8. Relatorios: Onde é apresentado dos os relatorios feitos no sistema.
+
+
+
+
+
+
+
+Não tem como eu testar por causa das condições.
+
+
+Modifiquei o arquivo Matriculas.js nas alinhas 346 Pendente, coloquei Confirmado.
+Na linha 647 Dinheiro, coloquei Multicaixa.
+
+No backend, dashboardController.js modifiquei a linha 34 pendente, coloquei pago
+
+No arqv Aluno.jsx stilizei no perfil do aluno  nos pagamentos.
+
+No arqv Professores.jsx trabalhei nas disciplinas.

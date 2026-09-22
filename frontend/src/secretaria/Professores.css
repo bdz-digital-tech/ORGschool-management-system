@@ -1,0 +1,146 @@
+
+.professores-container {
+  background: #0a0a0a;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #e8e8e8;
+}
+
+/* Header */
+.professores-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.professores-header h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #f0f0f0;
+}
+
+.professores-header h2 .icon {
+  font-size: 2rem;
+}
+
+/* Badges específicos */
+.especialidade-badge {
+  background: #1a2a3a;
+  color: #80b0d0;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid #2a4a5a;
+  display: inline-block;
+}
+
+
+/* Step */
+.form-step h3 {
+  color: #d0d0d0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.btn-prev {
+  background: #2a2a2a;
+  color: #b0b0b0;
+  border: 1px solid #3b3b3b;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.3s;
+}
+
+.btn-prev:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.btn-next {
+  background: #2c5a2c;
+  color: #f0f0f0;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.3s;
+  border: 1px solid #3a6a3a;
+}
+
+.btn-next:hover {
+  background: #3a7a3a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 90, 44, 0.3);
+}
+
+/* Multi Select */
+.multi-select-container {
+  padding: 1rem 0;
+}
+
+.multi-select-container h4 {
+  color: #d0d0d0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.disciplinas-group {
+  margin-bottom: 1.5rem;
+}
+
+.disciplinas-group h4 {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3rem;
+}
+
+.classes-turmas-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.multi-select-group h4 {
+  color: #b0b0b0;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.4rem;
+}
+
+.classes-turmas-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.info-group h5 {
+  color: #b0b0b0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+
+
